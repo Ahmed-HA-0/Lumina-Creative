@@ -332,6 +332,16 @@ textarea::placeholder {
   font-size: 16px;
 }
 
+input:invalid,
+textarea:invalid {
+  border-bottom: 1px solid red;
+}
+
+input:valid,
+textarea:valid {
+  border-bottom: 1px solid green;
+}
+
 /* Media Query (Home) */
 @media (max-width: 768px) {
   /* for-header */
@@ -362,7 +372,7 @@ textarea::placeholder {
     grid-template-columns: 1fr 1fr;
   }
 
-  .grid-gallery .gallery-item:last-child {
+  .grid-gallery .gallery-item:last-of-type {
     grid-column: span 2;
     width: 50%;
     justify-self: center;
