@@ -150,7 +150,7 @@ ul a:hover {
 
 .grid-gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   column-gap: 2px;
   row-gap: 19px;
