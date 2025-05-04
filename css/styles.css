@@ -152,8 +152,7 @@ ul a:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  column-gap: 2px;
-  row-gap: 19px;
+  gap: 20px;
 }
 
 .gallery-item a {
@@ -343,7 +342,7 @@ textarea:valid {
 }
 
 /* Media Query (Home) */
-@media (max-width: 768px) {
+@media (max-width: 770px) {
   /* for-header */
   .header-flex {
     flex-direction: column;
@@ -369,7 +368,7 @@ textarea:valid {
 
   /* for gallery */
   .grid-gallery {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .grid-gallery .gallery-item:last-of-type {
